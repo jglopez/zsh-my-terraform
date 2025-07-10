@@ -44,10 +44,24 @@ automatically manages plan file names and displays PR context when running Terra
 
 ## Usage
 
-- `tfp`: Create a Terraform plan file with a name based on the current PR (if any).
-- `tfsh`: Show the plan file for the current PR (or the default plan file). This allows easy copying of the
-  plan output to the clipboard.
-- `tfa`: Apply the plan file for the current PR (or the default plan file).
+1. Create a draft GitHub PR.
+
+   - You can use `gh pr create --draft` to create a draft PR from the command line.
+   - If you don't have `gh` installed, you can create a PR manually on GitHub.
+
+2. Make changes to your Terraform code.
+
+3. `tfp`: Create a Terraform plan file with a name based on the current PR (if any).
+
+   - If you don't have a PR, the plugin will default to using `plan.tfplan` as the plan file name.
+
+4. `tfsh`: Show the plan you just created. This allows easy copying of the plan output to the clipboard.
+
+   - On macOS, you can use `tfsh | tee >(pbcopy)` to copy the plan to your clipboard.
+
+5. Mark the PR as ready for review.
+
+6. `tfa`: Apply the plan file.
 
 ## Example
 
