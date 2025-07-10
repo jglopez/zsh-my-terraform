@@ -37,16 +37,16 @@ tfp() {
 
   # If it exists, display information about the PR
   if [[ -n "$pr_number" ]]; then
-    cat <<-EOF
-    GitHub PR detected: #${pr_number}
-    PR URL: ${pr_url}
-    
-    Plan file: ${plan_file}
+    cat <<EOF
+GitHub PR detected: #${pr_number}
+PR URL: ${pr_url}
+
+Plan file: ${plan_file}
 EOF
   else
-    cat <<-EOF
-    No GitHub PR detected.
-    Using default plan file: ${plan_file}
+    cat <<EOF
+No GitHub PR detected.
+Using default plan file: ${plan_file}
 EOF
   fi
 
