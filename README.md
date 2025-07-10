@@ -56,7 +56,7 @@ automatically manages plan file names and displays PR context when running Terra
 
 4. `tfsh`: Show the plan you just created. This allows easy copying of the plan output to the clipboard.
 
-   You can use `tfsh | tee >(pbcopy)` (or similar) to copy the plan to your clipboard.
+   - You can use `tfsh | tee >(pbcopy)` (or similar) to copy the plan to your clipboard.
 
 5. Mark the PR as ready for review.
 
