@@ -28,9 +28,9 @@ automatically manages plan file names and displays PR context when running Terra
 
 ## Installation
 
-1. Copy `zsh-my-terraform.plugin.zsh` to your Oh My Zsh custom plugins directory, e.g.:
+1. Clone this repository into `$ZSH_CUSTOM/plugins` (by default `~/.oh-my-zsh/custom/plugins`)
    ```sh
-   cp zsh-my-terraform.plugin.zsh ~/.oh-my-zsh/custom/plugins/zsh-my-terraform/
+   git clone https://github.com/jglopez/zsh-my-terraform ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-my-terraform
    ```
 2. Add `zsh-my-terraform` to the `plugins=(...)` list in your `.zshrc`, making sure it comes after
    `terraform`:
