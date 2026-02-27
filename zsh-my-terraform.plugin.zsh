@@ -1,3 +1,6 @@
+# NOTE: Function names (tfp, tfsh, tfa) are referenced in ~/.claude/rules/terraform.md.
+# Update that file if you rename or add functions.
+
 # Helper function to get the current PR info
 _get_gh_pr_info() {
   if command -v gh >/dev/null 2>&1; then
