@@ -1,3 +1,6 @@
+# NOTE: Function names (tfp, tfsh, tfa) may be referenced by external tools or documentation.
+# If you rename or add functions, update any dependent configurations or docs accordingly.
+
 # Helper function to get the current PR info
 _get_gh_pr_info() {
   if command -v gh >/dev/null 2>&1; then
